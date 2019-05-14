@@ -1,0 +1,80 @@
+{
+  "name": "d.wenzel/ajaxmap-bundle",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Dirk Wenzel",
+      "email": "wenzel@cps-it.de"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:dwenzel/ajaxmap_example_site.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:dwenzel/ajaxmap.git"
+    }
+  ],
+  "extra": {
+    "setup-helper": [
+      {
+        "unlink": [
+          ".ddev/.git",
+          ".ddev/composer.json"
+          ]
+      }
+    ],
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "app/web"
+    },
+    "installer-types": [
+      "bundle-templates-ddev"
+    ],
+    "installer-paths": {
+      ".ddev/": [
+        "type:bundle-templates-ddev"
+      ],
+      ".deployment/": [
+        "type:bundle-templates-deployment"
+      ]
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "vendor-dir": "app/vendor",
+    "web-dir": "app/web"
+  },
+  "require": {
+    "cpsit/setup-helper": "^1.2",
+    "typo3/minimal": "^9.5",
+    "typo3/cms-adminpanel": "^9.5",
+    "typo3/cms-belog": "^9.5",
+    "typo3/cms-info": "^9.5",
+    "typo3/cms-reports": "^9.5",
+    "typo3/cms-setup": "^9.5",
+    "typo3/cms-t3editor": "^9.5",
+    "typo3/cms-tstemplate": "^9.5",
+    "typo3/cms-viewpage": "^9.5",
+    "dwenzel/reporter": "^0.3",
+    "helhum/typo3-console": "^5.6"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "dwenzel/ajaxmap": "dev-feature/compatible9",
+    "dwenzel/ajaxmap-example-site": "dev-develop"
+  },
+  "scripts": {
+    "typo3-cms-scripts": [
+      "typo3cms install:fixfolderstructure",
+      "typo3cms install:generatepackagestates"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  }
+}
