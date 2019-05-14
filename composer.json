@@ -1,5 +1,6 @@
 {
-  "name": "d.wenzel/ajaxmap-bundle",
+  "name": "dwenzel/ajaxmap-bundle",
+  "description": "Project bundle for development of dwenzel/ajaxmap",
   "type": "project",
   "authors": [
     {
@@ -17,56 +18,55 @@
       "url": "git@github.com:dwenzel/ajaxmap.git"
     }
   ],
+  "config": {
+    "vendor-dir": "app/vendor",
+    "web-dir": "app/web",
+    "bin-dir": "app/vendor/bin",
+    "preferred-install": {
+      "dwenzel/ajaxmap": "source",
+      "dwenzel/ajaxmap-example-site": "source",
+      "*": "dist"
+    },
+    "platform": {
+      "php": "7.2"
+    }
+  },
   "extra": {
-    "setup-helper": [
-      {
-        "unlink": [
-          ".ddev/.git",
-          ".ddev/composer.json"
-          ]
-      }
-    ],
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": "app/web"
     },
-    "installer-types": [
-      "bundle-templates-ddev"
-    ],
-    "installer-paths": {
-      ".ddev/": [
-        "type:bundle-templates-ddev"
-      ],
-      ".deployment/": [
-        "type:bundle-templates-deployment"
-      ]
+    "helhum/typo3-console": {
+      "install-extension-dummy": "0"
     }
   },
-  "config": {
-    "platform": {
-      "php": "7.2"
-    },
-    "vendor-dir": "app/vendor",
-    "web-dir": "app/web"
-  },
+  "authors": [
+    {
+      "name": "Dirk Wenzel",
+      "email": "der-wenzel@gmx.de"
+    }
+  ],
   "require": {
-    "cpsit/setup-helper": "^1.2",
+    "helhum/typo3-console": "^5.5.5",
     "typo3/minimal": "^9.5",
     "typo3/cms-adminpanel": "^9.5",
     "typo3/cms-belog": "^9.5",
+    "typo3/cms-beuser": "^9.5",
+    "typo3/cms-form": "^9.5",
     "typo3/cms-info": "^9.5",
     "typo3/cms-reports": "^9.5",
     "typo3/cms-setup": "^9.5",
     "typo3/cms-t3editor": "^9.5",
     "typo3/cms-tstemplate": "^9.5",
     "typo3/cms-viewpage": "^9.5",
-    "dwenzel/reporter": "^0.3",
-    "helhum/typo3-console": "^5.6"
+    "dwenzel/reporter": "*",
+    "helhum/config-loader": "^0.11.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
     "dwenzel/ajaxmap": "dev-feature/compatible9",
-    "dwenzel/ajaxmap-example-site": "dev-develop"
+    "dwenzel/ajaxmap-example-site": "dev-develop",
+    "nimut/testing-framework": "^4.1"
   },
   "scripts": {
     "typo3-cms-scripts": [
@@ -76,5 +76,10 @@
     "post-autoload-dump": [
       "@typo3-cms-scripts"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DWenzel\\Ajaxmap\\": "app/web/typo3conf/ext/ajaxmap/Classes"
+    }
   }
 }
