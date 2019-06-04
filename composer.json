@@ -66,7 +66,8 @@
   "require-dev": {
     "roave/security-advisories": "dev-master",
     "dwenzel/ajaxmap": "dev-feature/compatible9",
-    "dwenzel/ajaxmap-example-site": "dev-develop"
+    "dwenzel/ajaxmap-example-site": "dev-develop",
+    "nimut/testing-framework": "^4.1"
   },
   "scripts": {
     "typo3-cms-scripts": [
