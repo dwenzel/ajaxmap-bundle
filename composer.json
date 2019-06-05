@@ -15,6 +15,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:CPS-IT/geo_location_service.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:dwenzel/ajaxmap.git"
     }
   ],
@@ -24,6 +28,7 @@
     "bin-dir": "app/vendor/bin",
     "preferred-install": {
       "dwenzel/ajaxmap": "source",
+      "cpsit/geo-location-service": "source",
       "dwenzel/ajaxmap-example-site": "source",
       "*": "dist"
     },
@@ -40,12 +45,6 @@
       "install-extension-dummy": "0"
     }
   },
-  "authors": [
-    {
-      "name": "Dirk Wenzel",
-      "email": "der-wenzel@gmx.de"
-    }
-  ],
   "require": {
     "helhum/typo3-console": "^5.5.5",
     "typo3/minimal": "^9.5",
@@ -66,7 +65,8 @@
     "roave/security-advisories": "dev-master",
     "dwenzel/ajaxmap": "dev-feature/compatible9",
     "dwenzel/ajaxmap-example-site": "dev-develop",
-    "nimut/testing-framework": "^4.1"
+    "nimut/testing-framework": "^4.1",
+    "cpsit/geo-location-service": "dev-develop"
   },
   "scripts": {
     "typo3-cms-scripts": [
