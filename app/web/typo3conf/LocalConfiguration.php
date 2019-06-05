@@ -22,6 +22,7 @@ return [
             'ajaxmap' => 'a:4:{s:13:"includeJQuery";s:1:"1";s:17:"includeGoogleMaps";s:1:"1";s:17:"includeJavaScript";s:1:"1";s:16:"includeFancyTree";s:1:"1";}',
             'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'geo_location_service' => 'a:1:{s:12:"googleApiKey";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'tt_address' => 'a:6:{s:21:"backwardsCompatFormat";s:9:"%1$s %3$s";s:24:"storeBackwardsCompatName";s:1:"1";s:17:"readOnlyNameField";s:1:"1";s:14:"activatePiBase";s:1:"0";s:32:"telephoneValidationPatternForPhp";s:13:"/[^\\d\\+\\s\\-]/";s:31:"telephoneValidationPatternForJs";s:14:"/[^\\d\\+\\s\\-]/g";}',
         ],
@@ -44,6 +45,9 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'geo_location_service' => [
+            'googleApiKey' => '',
         ],
         'scheduler' => [
             'maxLifetime' => '1440',
@@ -83,6 +87,7 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
+        'encryptionKey' => '4946ed1ea18273d7a936771b532b048f73f1e7c79a139683f97bd988de9c52b27bf4c96c7f5d9a2c25cae746387c0b1f',
         'exceptionalErrors' => 12290,
         'features' => [
             'unifiedPageTranslationHandling' => true,
