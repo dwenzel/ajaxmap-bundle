@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "986d0a038a7a236539e81c9c378d8e29",
+    "content-hash": "8ffbe1dec0a1608d0d0b27bf15c6592b",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -2575,8 +2575,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "The TYPO3 admin panel provides a panel with additional functionality in the frontend (Debugging, Caching, Preview...)",
@@ -2640,8 +2640,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Classes for the TYPO3 backend.",
@@ -2692,8 +2692,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Displays backend log, both per page and system wide. Available as the module Tools>Log (system wide overview) and Web>Info/Log (page relative overview).",
@@ -2744,8 +2744,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Backend user administration and overview. Allows you to compare the settings of users and verify their permissions and see who is online.",
@@ -2958,8 +2958,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "The core library of TYPO3.",
@@ -3020,8 +3020,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "A framework to build extensions for TYPO3 CMS.",
@@ -3074,8 +3074,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "TYPO3 Extension Manager",
@@ -3128,8 +3128,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Listing of files in the directory",
@@ -3189,8 +3189,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
@@ -3247,8 +3247,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Form Library, Plugin and Editor",
@@ -3304,11 +3304,63 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Classes for the frontend of TYPO3.",
+            "homepage": "https://typo3.org",
+            "time": "2019-05-07T10:16:30+00:00"
+        },
+        {
+            "name": "typo3/cms-impexp",
+            "version": "v9.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/impexp.git",
+                "reference": "2f5a56f15e8f5e4f805c7a3f67156785e4426b16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/impexp/zipball/2f5a56f15e8f5e4f805c7a3f67156785e4426b16",
+                "reference": "2f5a56f15e8f5e4f805c7a3f67156785e4426b16",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.6"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "impexp": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "impexp"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Impexp\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
+                }
+            ],
+            "description": "Import and Export of records from TYPO3 in a custom serialized format (.T3D) for data exchange with other TYPO3 systems.",
             "homepage": "https://typo3.org",
             "time": "2019-05-07T10:16:30+00:00"
         },
@@ -3363,8 +3415,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Shows various infos",
@@ -3421,8 +3473,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "The Install Tool mounted as the module Tools>Install in TYPO3.",
@@ -3480,8 +3532,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "List of database-records",
@@ -3540,8 +3592,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "The reports module groups several system reports.",
@@ -3589,8 +3641,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "The TYPO3 Scheduler let's you register tasks to happen at a specific time",
@@ -3641,8 +3693,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Allows users to edit a limited set of options for their user profile, eg. preferred language and their name and email address.",
@@ -3698,8 +3750,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "JavaScript-driven editor with syntax highlighting and codecompletion. Based on CodeMirror.",
@@ -3750,8 +3802,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Framework for management of TypoScript template records for the CMS frontend.",
@@ -3802,8 +3854,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Shows the frontend webpage inside the backend frameset.",
@@ -3957,12 +4009,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CPS-IT/geo_location_service.git",
-                "reference": "a7198809c35bb78603523cfe898fc529f104ff5c"
+                "reference": "0f0bf6546ab4382f17278d7ab9de70785ff57620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CPS-IT/geo_location_service/zipball/a7198809c35bb78603523cfe898fc529f104ff5c",
-                "reference": "a7198809c35bb78603523cfe898fc529f104ff5c",
+                "url": "https://api.github.com/repos/CPS-IT/geo_location_service/zipball/0f0bf6546ab4382f17278d7ab9de70785ff57620",
+                "reference": "0f0bf6546ab4382f17278d7ab9de70785ff57620",
                 "shasum": ""
             },
             "require": {
@@ -3985,9 +4037,13 @@
                 {
                     "name": "Erik Rauchstein",
                     "role": "Developer"
+                },
+                {
+                    "name": "Dirk Wenzel",
+                    "role": "Developer"
                 }
             ],
-            "description": "Get latitude and longatitute for an address per google api call",
+            "description": "Get latitude and longitude for an address per google api call",
             "homepage": "https://github.com/CPS-IT/geo_location_service",
             "keywords": [
                 "TYPO3",
@@ -3997,23 +4053,24 @@
                 "source": "https://github.com/CPS-IT/geo_location_service/tree/develop",
                 "issues": "https://github.com/CPS-IT/geo_location_service/issues"
             },
-            "time": "2019-05-27T10:51:04+00:00"
+            "time": "2019-05-27T11:38:37+00:00"
         },
         {
             "name": "dwenzel/ajaxmap",
-            "version": "dev-feature/compatible9",
+            "version": "dev-feature/webpack",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dwenzel/ajaxmap.git",
-                "reference": "9e6e1015b332ce61e65a7f7d7c2d7d39ede0c94f"
+                "reference": "4348eca260b3109b64e349baf2f1966d7cfc8352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dwenzel/ajaxmap/zipball/9e6e1015b332ce61e65a7f7d7c2d7d39ede0c94f",
-                "reference": "9e6e1015b332ce61e65a7f7d7c2d7d39ede0c94f",
+                "url": "https://api.github.com/repos/dwenzel/ajaxmap/zipball/4348eca260b3109b64e349baf2f1966d7cfc8352",
+                "reference": "4348eca260b3109b64e349baf2f1966d7cfc8352",
                 "shasum": ""
             },
             "require": {
+                "cpsit/geo-location-service": "^0.2",
                 "friendsoftypo3/tt-address": "*",
                 "typo3/cms-core": "^9.5"
             },
@@ -4026,9 +4083,6 @@
             },
             "type": "typo3-cms-extension",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3.x-dev"
-                },
                 "typo3/cms": {
                     "cms-package-dir": "{$vendor-dir}/typo3/cms",
                     "web-dir": ".Build/Web"
@@ -4070,10 +4124,10 @@
                 "map"
             ],
             "support": {
-                "source": "https://github.com/dwenzel/ajaxmap/tree/feature/compatible9",
+                "source": "https://github.com/dwenzel/ajaxmap/tree/feature/webpack",
                 "issues": "https://github.com/dwenzel/ajaxmap/issues"
             },
-            "time": "2019-05-27T10:39:27+00:00"
+            "time": "2019-08-20T10:06:20+00:00"
         },
         {
             "name": "dwenzel/ajaxmap-example-site",
@@ -5872,8 +5926,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "A set of common content elements based on Fluid for Frontend output.",
@@ -5927,8 +5981,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "typo3cms@typo3.org"
                 }
             ],
             "description": "Integration of CKEditor as Rich Text Editor.",
@@ -5987,7 +6041,20 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.1.0",
+            "alias_normalized": "2.1.0.0",
+            "version": "dev-feature/webpack",
+            "package": "dwenzel/ajaxmap"
+        },
+        {
+            "alias": "0.2",
+            "alias_normalized": "0.2.0.0",
+            "version": "dev-develop",
+            "package": "cpsit/geo-location-service"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "roave/security-advisories": 20,

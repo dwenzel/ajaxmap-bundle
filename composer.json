@@ -59,14 +59,15 @@
     "typo3/cms-tstemplate": "^9.5",
     "typo3/cms-viewpage": "^9.5",
     "dwenzel/reporter": "*",
-    "helhum/config-loader": "^0.11.0"
+    "helhum/config-loader": "^0.11.0",
+    "typo3/cms-impexp": "~9.5"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
-    "dwenzel/ajaxmap": "dev-feature/compatible9",
+    "dwenzel/ajaxmap": "dev-feature/webpack as 2.1.0",
     "dwenzel/ajaxmap-example-site": "dev-develop",
     "nimut/testing-framework": "^4.1",
-    "cpsit/geo-location-service": "dev-develop"
+    "cpsit/geo-location-service": "dev-develop as 0.2"
   },
   "scripts": {
     "typo3-cms-scripts": [
