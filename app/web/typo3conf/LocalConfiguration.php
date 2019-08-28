@@ -19,7 +19,7 @@ return [
     ],
     'EXT' => [
         'extConf' => [
-            'ajaxmap' => 'a:4:{s:16:"includeFancyTree";s:1:"0";s:17:"includeJavaScript";s:1:"1";s:17:"includeGoogleMaps";s:1:"0";s:13:"includeJQuery";s:1:"0";}',
+            'ajaxmap' => 'a:4:{s:16:"includeFancyTree";s:1:"0";s:17:"includeJavaScript";s:1:"1";s:17:"includeGoogleMaps";s:1:"1";s:13:"includeJQuery";s:1:"0";}',
             'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:0:"";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
             'geo_location_service' => 'a:1:{s:12:"googleApiKey";s:0:"";}',
@@ -30,7 +30,7 @@ return [
     'EXTENSIONS' => [
         'ajaxmap' => [
             'includeFancyTree' => '0',
-            'includeGoogleMaps' => '0',
+            'includeGoogleMaps' => '1',
             'includeJQuery' => '0',
             'includeJavaScript' => '1',
         ],
