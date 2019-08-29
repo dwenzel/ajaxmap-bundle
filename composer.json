@@ -63,7 +63,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
-    "dwenzel/ajaxmap": "dev-feature/compatible9",
+    "dwenzel/ajaxmap": "dev-develop",
     "dwenzel/ajaxmap-example-site": "dev-develop",
     "nimut/testing-framework": "^4.1",
     "cpsit/geo-location-service": "dev-develop as 0.2"

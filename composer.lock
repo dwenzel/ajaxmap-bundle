@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e49d17e56b6093e38be7ad5a19cc879",
+    "content-hash": "4997149d6b5bea7b8f3b3c84c8cc0555",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -4075,16 +4075,16 @@
         },
         {
             "name": "dwenzel/ajaxmap",
-            "version": "dev-feature/compatible9",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dwenzel/ajaxmap.git",
-                "reference": "31378d07bd6b61ef8aad0560a058e6d5ea7dabdd"
+                "reference": "5ffa25d04fd3f3c01caba2940aa2e70618c8d5a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dwenzel/ajaxmap/zipball/31378d07bd6b61ef8aad0560a058e6d5ea7dabdd",
-                "reference": "31378d07bd6b61ef8aad0560a058e6d5ea7dabdd",
+                "url": "https://api.github.com/repos/dwenzel/ajaxmap/zipball/5ffa25d04fd3f3c01caba2940aa2e70618c8d5a7",
+                "reference": "5ffa25d04fd3f3c01caba2940aa2e70618c8d5a7",
                 "shasum": ""
             },
             "require": {
@@ -4101,9 +4101,6 @@
             },
             "type": "typo3-cms-extension",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3.x-dev"
-                },
                 "typo3/cms": {
                     "cms-package-dir": "{$vendor-dir}/typo3/cms",
                     "web-dir": ".Build/Web"
@@ -4145,10 +4142,10 @@
                 "map"
             ],
             "support": {
-                "source": "https://github.com/dwenzel/ajaxmap/tree/feature/compatible9",
+                "source": "https://github.com/dwenzel/ajaxmap/tree/develop",
                 "issues": "https://github.com/dwenzel/ajaxmap/issues"
             },
-            "time": "2019-08-15T14:17:56+00:00"
+            "time": "2019-08-19T14:00:19+00:00"
         },
         {
             "name": "dwenzel/ajaxmap-example-site",
